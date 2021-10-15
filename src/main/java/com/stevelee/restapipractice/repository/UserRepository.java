@@ -2,11 +2,15 @@ package com.stevelee.restapipractice.repository;
 
 import com.stevelee.restapipractice.dto.User;
 
-public interface MemoryUserRepository {
+import java.util.List;
 
-    void login(User user);
+public interface UserRepository {
+
+    boolean login(User user);
 
     void join(User user);
 
     User findUserById(String userId);
+
+    List<User> findAll();
 }
