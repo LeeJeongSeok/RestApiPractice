@@ -6,8 +6,6 @@ import java.util.List;
 
 public interface UserRepository {
 
-    boolean login(User user);
-
     void join(User user);
 
     User findUserById(String userId);

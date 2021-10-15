@@ -30,7 +30,7 @@ public class SwaggerConfiguration {
                 .groupName("USER-API")
                 .apiInfo(this.apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.stevelee.restapipractice.user.project"))
+                .apis(RequestHandlerSelectors.basePackage("com.stevelee.restapipractice"))
                 .paths(PathSelectors.ant("/api/v1/user/**"))
                 .build();
     }
